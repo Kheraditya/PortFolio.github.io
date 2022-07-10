@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav div {
+    background-color: #270082;
+    color: white;
+    display: inline-flex;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 80px;
+    margin: 0px;
+    text-decoration: none;
+    justify-content: space-between;
+    position: fixed;
+}
+
+nav div span {
+    font-size: 23px;
+}
+
+nav div ul li {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+nav div ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Overview div {
+    background-image: url(images/Overview_image.png);
+    color: white;
+    height: 560px;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.Overview div h1 {
+    font-size: 100px;
+    line-height: 110px;
+}
+
+.Overview div h3 {
+    font-size: 35px;
+    line-height: 120px;
+}
+
+.Overview div p {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 30px;
+}
+
+.Music div {
+    background-color: #281154;
+    color: #ffffff;
+    height: 350px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Music div h1 {
+    font-size: 40px;
+    line-height: 110px;
+}
+
+.Music div h4 {
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.Music div button {
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid white;
+    background: red;
+    color: white;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+}
+
+.img {
+    position: relative;
+    top: 20px;
+}
+
+.about-music {
+    height: 1670px;
+    text-align: center;
+    padding-top: 750px;
+}
+
+.about-music p {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.about-music button {
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #270082;
+    color: white;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+}
+
+.video-section {
+    background-image: url(images/video.png);
+    height: 700px;
+    text-align: center;
+    padding-top: 250px;
+    color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.video-section h3 {
+    font-size: 23px;
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.video-section p {
+    font-size: 18px;
+}
+
+.gift-section div img {
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.gift-section {
+    justify-content: space-between;
+    display: flex;
+    height: 550px;
+}
+
+.gift-section button {
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #270082;
+    color: white;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+}
+
+.gift-section .gift-content h3 {
+    padding-top: 80px;
+    font-size: 24px;
+}
+
+.gift-section .gift-content {
+    padding-left: 80px;
+}
+
+.gift-section .gift-content p {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.footer-upper div {
+    background-color: #1a0254;
+    color: #ffffff;
+    justify-content: space-between;
+    display: flex;
+    padding: 15px;
+    height: 210px;
+    overflow: hidden;
+}
+
+.footer-upper .footer-links {
+    display: block;
+    line-height: 18px;
+}
+
+.footer-upper .footer-links h4 {
+    padding-bottom: 8px;
+}
+
+.footer-upper .footer-links li {
+    list-style: none;
+    padding-top: 8px;
+}
+
+footer div {
+    background-color: #270082;
+    text-align: center;
+    height: 40px;
+    color: white;
+    padding: 10px;
+}

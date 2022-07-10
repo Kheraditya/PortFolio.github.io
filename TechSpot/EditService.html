@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="import" href="/residents.html">
+    <link rel="import" href="/notice.html">
+    <link rel="import" href="/social welfare.html">
+    <link rel="import" href="/services.html">
+    <link rel="import" href="/profile.html">
+    <link rel="import" href="/home.html">
+    <link rel="import" href="/login.html">
+    <link rel="import" href="/review.html">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid" id="navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+        </button>
+                <a class="navbar-brand" href="/home.html">
+                    <img src="images/diversity.png" alt="E-Society">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" id="navlist">
+                    <li><a href="/residents.html">Residents</a></li>
+                    <li><a href="/notice.html">Noticeboard</a></li>
+                    <li><a href="/review.html">Reviews</a></li>
+                    <li><a href="/social welfare.html">Social Welfare</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/profile.html">Profile</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container center">
+        <div class="row">
+            <div class="col-sm-12 col-md-9 col-lg-10 center" style="max-width: 600px;float: initial;">
+                <div class="card card-profile my-6">
+                    <div class="card-body" style="padding:5%; margin:5% 0; padding-top:3%;">
+                        <h2 style="background-color:rgb(51, 51, 51); padding:8px; color:white; text-align:center; border-radius:1rem; font-size: 20px;">
+                            Edit Service Contacts
+                        </h2>
+                        <form class="form-edit" action="/editContacts" method="POST">
+                            <div class=row style="margin: 1%;">
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4%"> <b> Education :</b></div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4px;">
+                                    <input name="plumbingService" type="tel" id="plumbingService" class="form-control">
+                                </div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4% "> <b> 
+                                      Healthcare :</b></div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4px ">
+                                    <input name="medicineShop" type="tel" id="medicineShop" class="form-control">
+                                </div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4% "> <b> Social Welfare :</b></div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:6px ">
+                                    <input name="doctor" type="tel" id="doctor" class="form-control">
+                                </div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4% "> <b> Household Needs :</b></div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4px ">
+                                    <input name="ambulance" type="tel" id="ambulance" class="form-control">
+                                </div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4% "> <b> Homemade Items :</b></div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:6px ">
+                                    <input name="fireStation" type="tel" id="fireStation" class="form-control">
+                                </div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4% "> <b> Police Station :</b></div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:6px ">
+                                    <input name="policeStation" type="tel" id="policeStation" class="form-control">
+                                </div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4% "> <b>Small Businesses :</b></div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:6px ">
+                                    <input name="Committee" type="tel" id="Committee" class="form-control">
+                                </div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:4% "> <b> Events:</b></div>
+                                <div class="col-sm-12 col-lg-12" style=" margin-top:6px ">
+                                    <input name="guard" type="tel" id="guard" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-12" style=" margin-top:4% "> <b> open innovation :</b></div>
+                            <div class="col-sm-12 col-lg-12" style=" margin-top:6px ">
+                                <input name="Education" type="tel" id="Education" class="form-control">
+                            </div>
+                            <div style=" margin-top: 4%;">
+                                <button type="submit" class="btn btn-primary btn-md  float-right" style="margin: 10px;">Save</button>
+                                <a href="/services.html" class="btn btn-danger btn-md float-right" style="margin: 10px;">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer content -->
+    <footer style="background-color:black ; color: #aaa;">
+        <div class="container home-container footer-head" style="display:flex-wrap ;">
+            <div class="box">
+                <h2 id="text1">About Us</h2>
+                <hr style="color: #555;">
+                <p id="text2">
+                    Community management app, capable of simplifying everyday living for your housing society. Manage accounts and payments, resolve complaints and keep the community up-to-date with all that’s going on in the society.
+                </p>
+            </div>
+            <br>
+
+
+            <div class="box">
+                <h2>Get In Touch</h2>
+                <hr style="color: #555;">
+                <div class="subcategories">
+                    <p id="text2">If you have any questions, please feel free to drop us a mail.</p>
+                    <a href="" target="_blank" style="font-size: 14px;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="author">
+ 
+</div> -->
+    </footer>
+
+</body>
+
+</html>

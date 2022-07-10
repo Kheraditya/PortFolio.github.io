@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.section1 {
+    background-image: url(images/image1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    background-attachment: fixed;
+    /* position: absolute;
+    width: 1440px;
+    height: 769px;
+    left: 0px;
+    top: 0px; */
+}
+
+.section1 div {
+    color: white;
+}
+
+.section1 div h1 {
+    position: absolute;
+    width: 600px;
+    height: 84px;
+    left: 313px;
+    top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 84px;
+}
+
+.section1 div h2 {
+    position: absolute;
+    width: 814px;
+    height: 84px;
+    left: 313px;
+    top: 90px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.section2 div {
+    background-color: #161619;
+    height: 170px;
+}
+
+.section2 div p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 84px;
+    color: #FFFFFF;
+    position: absolute;
+    width: 1015px;
+    height: 120px;
+    left: 280px;
+    top: 740px;
+    text-transform: capitalize;
+}
+
+.section2 div p span {
+    font-size: 100px;
+    ;
+}
+
+.section3 .cards {
+    padding-top: 120px;
+    padding-bottom: 90px;
+    display: inline-flex;
+}
+
+.section3 .cards .box {
+    width: 30%;
+    justify-content: space-between;
+    padding-left: 80px;
+    box-shadow: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.section3 .cards .box .content div h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 24px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.section4 {
+    padding: 0px;
+    display: flex;
+    height: 300px;
+}
+
+.section4 .contact {
+    background: #515603;
+    width: 50%;
+}
+
+.section4 .contact h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-top: 15px;
+}
+
+.section4 .contact p {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    color: white;
+}
+
+.section4 .about {
+    background: #722300;
+    width: 50%;
+}
+
+.section4 .about p {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    color: white;
+}
+
+.section4 .about h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-top: 15px;
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer div i {
+    justify-content: space-between;
+    padding-left: 10px;
+}

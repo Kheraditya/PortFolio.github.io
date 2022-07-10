@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="import" href="/TechSpot/residents.html">
+    <link rel="import" href="/TechSpot/notice.html">
+    <link rel="import" href="/TechSpot/social welfare.html">
+    <link rel="import" href="/TechSpot/services.html">
+    <link rel="import" href="/TechSpot/profile.html">
+    <link rel="import" href="/TechSpot/home.html">
+    <link rel="import" href="/TechSpot/login.html">
+    <link rel="import" href="/TechSpot/review.html">
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-color: #f7f6f6;
+        }
+        
+        .card {
+            display: inline-block;
+            padding-left: 50px;
+            width: 30%;
+            border: none;
+            box-shadow: 5px 6px 6px 2px #e9ecef;
+            border-radius: 12px;
+        }
+        
+        .circle-image img {
+            border: 6px solid #fff;
+            border-radius: 100%;
+            padding: 0px;
+            top: -28px;
+            position: relative;
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            z-index: 1;
+            background: #e7d184;
+            cursor: pointer;
+        }
+        /* .dot {
+            height: 18px;
+            width: 18px;
+            background-color: blue;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            border: 3px solid #fff;
+            top: -48px;
+            left: 186px;
+            z-index: 1000;
+        } */
+        
+        .name {
+            margin-top: -21px;
+            font-size: 18px;
+        }
+        
+        .fw-500 {
+            font-weight: 500 !important;
+        }
+        
+        .start {
+            color: green;
+        }
+        
+        .stop {
+            color: red;
+        }
+        
+        .rate {
+            border-bottom-right-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+        
+        .rating {
+            /* display: flex; */
+            flex-direction: row-reverse;
+            justify-content: center
+        }
+        
+        .rating>input {
+            display: none
+        }
+        
+        .rating>label {
+            position: relative;
+            width: 1em;
+            font-size: 30px;
+            font-weight: 300;
+            color: #FFD600;
+            cursor: pointer
+        }
+        
+        .rating>label::before {
+            content: "\2605";
+            position: absolute;
+            opacity: 0
+        }
+        
+        .rating>label:hover:before,
+        .rating>label:hover~label:before {
+            opacity: 1 !important
+        }
+        
+        .rating>input:checked~label:before {
+            opacity: 1
+        }
+        
+        .rating:hover>input:checked~label:before {
+            opacity: 0.4
+        }
+        
+        .buttons {
+            top: 36px;
+            position: relative;
+        }
+        
+        .rating-submit {
+            border-radius: 15px;
+            color: #fff;
+            height: 49px;
+        }
+        
+        .rating-submit:hover {
+            color: #fff;
+        }
+    </style>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid" id="navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+        </button>
+                <a class="navbar-brand" href="/home.html">
+                    <img src="images/ThinkSocial_logo.jpeg" alt="E-Society" style="width: 30px; height:30px">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" id="navlist">
+                    <li><a href="/TechSpot/residents.html">Residents</a></li>
+                    <li><a href="/TechSpot/notice.html">Noticeboard</a></li>
+                    <li><a href="/TechSpot/review.html">Reviews</a></li>
+                    <li><a href="/TechSpot/social welfare.html">Social Welfare</a></li>
+                    <li><a href="/TechSpot/services.html">Services</a></li>
+                    <li><a href="/TechSpot/profile.html">Profile</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container d-flex justify-content-center mt-5">
+
+        <div class="card text-center mb-5">
+
+            <div class="circle-image">
+                <img src="/images/ThinkSocial_logo.jpeg" width="50">
+            </div>
+
+            <span class="dot"></span>
+
+            <p><span class="name mb-1 fw-500">Bryan Williams</span></p>
+            <p><small class="text-black-50">Flat No.</small></p>
+            <p><small class="text-black-50 font-weight-bold">Contact No.</small></p>
+
+
+
+            <div class="location mt-4">
+
+                <p> <span class="d-block"><i class="fa fa-map-marker start"></i> <small class="text-truncate ml-2">Business Discription</small> </span></p>
+
+                <p> <span><i class="fa fa-map-marker stop mt-2"></i> <small class="text-truncate ml-2">Mandir Road, Mayur vihar, new delhi</small> </span></p>
+
+            </div>
+
+
+
+            <div class="rate bg-success py-3 text-white mt-3">
+                <br>
+
+                <h6 class="mb-0">Rate your Experience</h6>
+
+                <div class="rating"> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                </div>
+
+
+                <div class="buttons px-4 mt-0">
+
+                    <button class="btn btn-warning btn-block rating-submit">Submit</button>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="card text-center mb-5">
+
+            <div class="circle-image">
+                <img src="/images/ThinkSocial_logo.jpeg" width="50">
+            </div>
+
+            <span class="dot"></span>
+
+            <p><span class="name mb-1 fw-500">Bryan Williams</span></p>
+            <p><small class="text-black-50">Flat No.</small></p>
+            <p><small class="text-black-50 font-weight-bold">Contact No.</small></p>
+
+
+
+            <div class="location mt-4">
+
+                <p> <span class="d-block"><i class="fa fa-map-marker start"></i> <small class="text-truncate ml-2">Business Discription</small> </span></p>
+
+                <p> <span><i class="fa fa-map-marker stop mt-2"></i> <small class="text-truncate ml-2">Mandir Road, Mayur vihar, new delhi</small> </span></p>
+
+            </div>
+
+
+
+            <div class="rate bg-success py-3 text-white mt-3">
+                <br>
+
+                <h6 class="mb-0">Rate your Experience</h6>
+
+                <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div>
+
+
+                <div class="buttons px-4 mt-0">
+
+                    <button class="btn btn-warning btn-block rating-submit">Submit</button>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="card text-center mb-5">
+
+            <div class="circle-image">
+                <img src="/images/ThinkSocial_logo.jpeg" width="50">
+            </div>
+
+            <span class="dot"></span>
+
+            <p><span class="name mb-1 fw-500">Bryan Williams</span></p>
+            <p><small class="text-black-50">Flat No.</small></p>
+            <p><small class="text-black-50 font-weight-bold">Contact No.</small></p>
+
+
+
+            <div class="location mt-4">
+
+                <p> <span class="d-block"><i class="fa fa-map-marker start"></i> <small class="text-truncate ml-2">Business Discription</small> </span></p>
+
+                <p> <span><i class="fa fa-map-marker stop mt-2"></i> <small class="text-truncate ml-2">Mandir Road, Mayur vihar, new delhi</small> </span></p>
+
+            </div>
+
+
+
+            <div class="rate bg-success py-3 text-white mt-3">
+                <br>
+
+                <h6 class="mb-0">Rate your Experience</h6>
+
+                <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div>
+
+
+                <div class="buttons px-4 mt-0">
+
+                    <button class="btn btn-warning btn-block rating-submit">Submit</button>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container d-flex justify-content-center mt-5">
+
+        <div class="card text-center mb-5">
+
+            <div class="circle-image">
+                <img src="/images/ThinkSocial_logo.jpeg" width="50">
+            </div>
+
+            <span class="dot"></span>
+
+            <p><span class="name mb-1 fw-500">Bryan Williams</span></p>
+            <p><small class="text-black-50">Flat No.</small></p>
+            <p><small class="text-black-50 font-weight-bold">Contact No.</small></p>
+
+
+
+            <div class="location mt-4">
+
+                <p> <span class="d-block"><i class="fa fa-map-marker start"></i> <small class="text-truncate ml-2">Business Discription</small> </span></p>
+
+                <p> <span><i class="fa fa-map-marker stop mt-2"></i> <small class="text-truncate ml-2">Mandir Road, Mayur vihar, new delhi</small> </span></p>
+
+            </div>
+
+
+
+            <div class="rate bg-success py-3 text-white mt-3">
+                <br>
+
+                <h6 class="mb-0">Rate your Experience</h6>
+
+                <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div>
+
+
+                <div class="buttons px-4 mt-0">
+
+                    <button class="btn btn-warning btn-block rating-submit">Submit</button>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="card text-center mb-5">
+
+            <div class="circle-image">
+                <img src="/images/ThinkSocial_logo.jpeg" width="50">
+            </div>
+
+            <span class="dot"></span>
+
+            <p><span class="name mb-1 fw-500">Bryan Williams</span></p>
+            <p><small class="text-black-50">Flat No.</small></p>
+            <p><small class="text-black-50 font-weight-bold">Contact No.</small></p>
+
+
+
+            <div class="location mt-4">
+
+                <p> <span class="d-block"><i class="fa fa-map-marker start"></i> <small class="text-truncate ml-2">Business Discription</small> </span></p>
+
+                <p> <span><i class="fa fa-map-marker stop mt-2"></i> <small class="text-truncate ml-2">Mandir Road, Mayur vihar, new delhi</small> </span></p>
+
+            </div>
+
+
+
+            <div class="rate bg-success py-3 text-white mt-3">
+                <br>
+
+                <h6 class="mb-0">Rate your Experience</h6>
+
+                <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div>
+
+
+                <div class="buttons px-4 mt-0">
+
+                    <button class="btn btn-warning btn-block rating-submit">Submit</button>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="card text-center mb-5">
+
+            <div class="circle-image">
+
+                <img src="/images/ThinkSocial_logo.jpeg" width="50">
+            </div>
+
+            <span class="dot"></span>
+
+            <p><span class="name mb-1 fw-500">Bryan Williams</span></p>
+            <p><small class="text-black-50">Flat No.</small></p>
+            <p><small class="text-black-50 font-weight-bold">Contact No.</small></p>
+
+
+
+            <div class="location mt-4">
+
+                <p> <span class="d-block"><i class="fa fa-map-marker start"></i> <small class="text-truncate ml-2">Business Discription</small> </span></p>
+
+                <p> <span><i class="fa fa-map-marker stop mt-2"></i> <small class="text-truncate ml-2">Mandir Road, Mayur vihar, new delhi</small> </span></p>
+
+            </div>
+
+
+
+            <div class="rate bg-success py-3 text-white mt-3">
+                <br>
+
+                <h6 class="mb-0">Rate your Experience</h6>
+
+                <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div>
+
+
+                <div class="buttons px-4 mt-0">
+
+                    <button class="btn btn-warning btn-block rating-submit">Submit</button>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div style="padding:4%; padding-top: 0%; font-family:sans-serif; font-size:14px;">
+        <h2 style="background-color:rgb(51, 51, 51); padding:18px;color:white; text-align: center; border-radius: 1rem; font-size: 20px; max-width: 1000px; margin:auto; margin-bottom: 10px;">
+            Community complaints
+        </h2>
+        <div class="container container-profile">
+            <row>
+                <col-4>
+                    <a href="/RaiseComplaint.html" class="btn btn-danger btn-md text-uppercase center" style="border-radius:3rem; max-width:180px; display: block; margin: auto;">
+              Raise Complaint
+            </a>
+                </col-4>
+            </row>
+            <br>
+
+
+        </div>
+        <br>
+
+
+
+    </div>
+
+
+    <!-- Footer content -->
+    <footer style="background-color:black ; color: #aaa; margin-bottom: 0;">
+        <div class="container home-container footer-head" style="display:flex-wrap ;">
+            <div class="box">
+                <h2 id="text1">About Us</h2>
+                <hr style="color: #555;">
+                <p id="text2">
+                    Community management app, capable of simplifying everyday living for your housing society. Manage accounts and payments, resolve complaints and keep the community up-to-date with all that’s going on in the society.
+                </p>
+            </div>
+            <br>
+            <br>
+
+
+
+            <div class="box">
+                <h2>Get In Touch</h2>
+                <hr style="color: #555;">
+                <div class="subcategories">
+                    <p id="text2">If you have any questions, please feel free to drop us a mail.</p>
+                    <a href="" target="_blank" style="font-size: 14px;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

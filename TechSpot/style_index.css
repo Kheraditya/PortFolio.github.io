@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #efefef;
+}
+
+nav {
+    text-align: right;
+    justify-content: space-between;
+    background-color: #1876f2;
+    padding: 5px 5%;
+}
+
+.taskbar.search-box img {
+    width: 28px;
+    margin: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    width: 32px;
+    margin: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav.taskbar {
+    margin: 25px;
+    padding: 5px 5%;
+    display: inline;
+}
+
+.main {
+    padding: 5px 2%;
+    display: inline-block;
+}
+
+.main.logo {
+    padding-right: 10px;
+}
+
+.main fieldset {
+    text-align: center;
+    width: 40%;
+    height: 60%;
+}
+
+.signup-form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: darkturquoise;
+    color: floralwhite;
+}
+
+.services {
+    margin: 2px;
+}
+
+.services h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+.services.service-boundry {
+    background-color: #efefef;
+}
+
+.services.service-boundry ul {
+    list-style: circle;
+    padding-left: 15px;
+}
+
+.service-boundry ul li {
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.copyright {
+    /* background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149018549.jpg?t=st=1647715285~exp=1647715885~hmac=f089ba80853bcbd7b5175be0708e445523a40b55ad6b81ca344101113688d305&w=900); */
+    width: 100%;
+    background-color: darkgray;
+    padding: 40px 0px;
+    background-size: cover;
+}
+
+.copyright h1 {
+    color: black;
+    font-size: 75px;
+    width: 1230px;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    border: .2rem solid black;
+    /* background: #191919; */
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: black;
+}
+
+h5 {
+    color: black;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: black;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
